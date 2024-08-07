@@ -87,3 +87,5 @@ end
   gem "rolify"
 
   gem "pundit"
+gem "sassc-rails"
+gem 'will_paginate'

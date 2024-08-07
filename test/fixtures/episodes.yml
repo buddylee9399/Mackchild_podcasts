@@ -1,0 +1,29 @@
+# == Schema Information
+#
+# Table name: episodes
+#
+#  id          :integer          not null, primary key
+#  description :text
+#  title       :string
+#  created_at  :datetime         not null
+#  updated_at  :datetime         not null
+#  podcast_id  :integer          not null
+#
+# Indexes
+#
+#  index_episodes_on_podcast_id  (podcast_id)
+#
+# Foreign Keys
+#
+#  podcast_id  (podcast_id => podcasts.id)
+#
+
+one:
+  title: MyString
+  description: MyText
+  podcast: one
+
+two:
+  title: MyString
+  description: MyText
+  podcast: two
